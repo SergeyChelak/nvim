@@ -8,7 +8,10 @@ return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
 
   -- Color scheme
-  -- use 'folke/tokyonight.nvim'
-  use 'gruvbox-community/gruvbox'
-
+  use({'folke/tokyonight.nvim',
+      as = 'tokyonight-storm',
+      config = function()
+         vim.cmd('colorscheme tokyonight-storm')
+      end
+  })
 end)
