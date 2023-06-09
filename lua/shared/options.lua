@@ -18,6 +18,9 @@ vim.o.softtabstop = 4
 vim.opt.swapfile = false
 vim.opt.backup = false
 
-vim.o.colorcolumn = 80
+vim.opt.colorcolumn = "80"
 vim.opt.termguicolors = true
+
+vim.opt.hlsearch = false
+vim.opt.incsearch = true
 
