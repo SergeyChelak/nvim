@@ -16,7 +16,7 @@ return require('packer').startup(function(use)
   use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate'}) 
 
   -- git support
-  use ('tpope/vim-fugitive')
+  use('tpope/vim-fugitive')
 
   use {
       'VonHeikemen/lsp-zero.nvim',
@@ -40,7 +40,6 @@ return require('packer').startup(function(use)
           {'rafamadriz/friendly-snippets'}, -- Optional
       }
   }
-
 
   -- Color scheme
   use({'rose-pine/neovim',
