@@ -48,6 +48,10 @@ return require('packer').startup(function(use)
       }
   }
 
+  -- Vertical indentation line
+  use('lukas-reineke/indent-blankline.nvim')
+
+  -- Color scheme
   use({
     'gruvbox-community/gruvbox',
     as = 'gruvbox',
