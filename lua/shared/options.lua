@@ -9,7 +9,6 @@ vim.opt.signcolumn = "yes"
 vim.o.smartindent = true
 vim.o.smarttab = true
 vim.opt.expandtab = true
--- TODO: check if it is required
 vim.o.tabstop = 4
 vim.o.shiftwidth = 4
 vim.o.softtabstop = 4
@@ -24,3 +23,6 @@ vim.opt.termguicolors = true
 vim.opt.hlsearch = false
 vim.opt.incsearch = true
 
+-- disable netrw at the very start
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
