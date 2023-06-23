@@ -42,10 +42,19 @@ return require('packer').startup(function(use)
   }
 
   -- Color scheme
+  --[[
   use({'rose-pine/neovim',
       as = 'rose-pine',
       config = function()
          vim.cmd('colorscheme rose-pine')
       end
   })
+  --]]
+  use({
+    'gruvbox-community/gruvbox',
+    as = 'gruvbox',
+    config = function()
+              vim.cmd('colorscheme gruvbox')
+             end
+})
 end)
